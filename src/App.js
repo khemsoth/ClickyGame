@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from './components/card';
+const characters = [
+  {
+    id: 1,
+    name: 'Spyro',
+    clicked: false
+  },
+    {
+    id: 2,
+    name: 'Bianca',
+    clicked: false
+  },
+    {
+    id: 3,
+    name: 'Elora',
+    clicked: false
+  },
+    {
+    id: 4,
+    name: 'Gnasty Gnorc',
+    clicked: false
+  },
+    {
+    id: 5,
+    name: 'Moneybags',
+    clicked: false
+  },
+    {
+    id: 6,
+    name: 'Ripto',
+    clicked: false
+  },
+    {
+    id: 7,
+    name: 'Sheila',
+    clicked: false
+  },
+    {
+    id: 8,
+    name: 'Sorceress',
+    clicked: false
+  }
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Card characters={characters} />;
 }
 
 export default App;
