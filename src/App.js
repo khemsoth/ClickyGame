@@ -4,7 +4,8 @@ const characters = [
   {
     id: 1,
     name: 'Spyro',
-    clicked: false
+    clicked: false,
+    //image: <img src='../public/img/Spyro'></img>
   },
     {
     id: 2,
